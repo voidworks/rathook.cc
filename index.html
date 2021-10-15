@@ -19,44 +19,85 @@
     <audio autoplay id="rathookaudio">
         <source src="song.mp3" type="audio/mpeg" />
     </audio>
-    <script>
-        var audio = document.getElementById("rathookaudio");
-        audio.volume = 0.2;
-    </script>
     <meta charset="UTF-8" />
     <title>rathook.cc</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-        type="text/javascript"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
     <div id="title">
-        <span> rathook.cc </span>
-        <br />
-        <span>So good that it rm -rf's your /</span>
+        <span>🐀rathook.cc🐀</span>
+        <br>
+        <span id="funnytext">best void linux tf2 cheat</span>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <div class='wrapper'>
+    <div>
         <span class="span_left">
             <a href="https://youtube.com/d3fc0n6">
-                <img src="yt.png" style="width:42px;height:42px;">
+                <img class="center" src="yt.png" style="width:42px;height:42px;">
             </a>
+            <span style="color: white; font-family: Arial, Helvetica, sans-serif;"><b>d3fc0n6</b></span>
         </span>
         <span class="span_right">
-            <font color="white">Head-Dev</font>
             <a href="https://www.youtube.com/channel/UCAtRwrqhgM49pmkFxI-ZWoQ">
-                <img src="yt.png" style="width:42px;height:42px;">
+                <img class="center" src="yt.png" style="width:42px;height:42px;">
             </a>
+            <span style="color: white; font-family: Arial, Helvetica, sans-serif;"><b>Developer</b></span>
+        </span>
+        <div class="bottom_center" style="bottom: 20%;" id="videos">
+            <span style="right: 60%;">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4b8FS56a6Q0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </span>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SSvxmWKcHEo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <span style="left: 60%">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yceI9B0BKng"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </span>
+        </div>
+        <span class="bottom_center" style="color: white; font-family: Arial, Helvetica, sans-serif;">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Simulink
         </span>
     </div>
+    <script>
+        var audio = document.getElementById("rathookaudio");
+        audio.volume = 0.2;
+    </script>
+    <script>
+        var text = ["join the ratnet", "aimbot that is based and ratpilled", "pwning ponyfags since 1993", "call me (479)-306-0577", "best void linux tf2 cheat"];
+        var elem = document.getElementById("funnytext");
+        var inst = setInterval(changeText, 3000);
+
+        var i = 0;
+        function changeText() {
+            elem.innerHTML = text[i];
+
+            i++;
+            if (i >= text.length)
+                i = 0;
+        }
+    </script>
+    <script>
+        const mobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+        if (mobile)
+            document.getElementById("videos").style = "display: none;"
+    </script>
 </body>
 
 </html>

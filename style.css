@@ -57,7 +57,7 @@ html {
 
 #title {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 0;
   right: 0;
   color: #FFF;
@@ -86,6 +86,22 @@ html {
   bottom: 0;
   right: 0;
   padding: 10px 15px;
+}
+
+.bottom_center {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 15px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 @keyframes animStar {
